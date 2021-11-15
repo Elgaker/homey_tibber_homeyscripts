@@ -1,5 +1,3 @@
-
-
 async function getData() {
   const data = JSON.stringify({
     query: `{
