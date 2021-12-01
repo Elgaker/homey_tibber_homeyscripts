@@ -32,6 +32,7 @@ async function getData() {
 
   const body = await response.json();
   const priceData = body.data.viewer.homes[0].currentSubscription.priceInfo.tomorrow;
+  var prices = []
 
   for ( var i = 0; i < priceData.length; i++) {
 	var obj = priceData[i].total;
